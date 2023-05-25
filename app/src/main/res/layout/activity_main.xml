@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8AFE8"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="53dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="First Number"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Second Number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSumar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber1" />
+
+    <Button
+        android:id="@+id/buttonSumar"
+        android:layout_width="222dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="10dp"
+        android:text="Sumar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRestar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+    <Button
+        android:id="@+id/buttonRestar"
+        android:layout_width="222dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="10dp"
+        android:text="Restar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDividir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSumar" />
+
+    <Button
+        android:id="@+id/buttonDividir"
+        android:layout_width="222dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="10dp"
+        android:text="Dividir"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMultiplicar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRestar" />
+
+    <Button
+        android:id="@+id/buttonMultiplicar"
+        android:layout_width="222dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="86dp"
+        android:text="Multiplicar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDividir" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="201dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="186dp"
+        android:layout_marginBottom="136dp"
+        android:text="000"
+        android:textColor="#D112DF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMultiplicar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
