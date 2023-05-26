@@ -1,4 +1,4 @@
-#  Android_calculator
+#  Android_calculator 👍 
 ### Its a project on Android Studio using Java, and the purpose was to make a calculator
 
 Tecnology applied 
